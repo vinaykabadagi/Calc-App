@@ -154,6 +154,7 @@ public class MainActivity extends AppCompatActivity {
                 if (t1.getText().length() > 0) {
                     ACTION = ADDITION;
                     operation();
+                    exceedLength();
                     if (!ifReallyDecimal()) {
                         t2.setText(val1 + "+");
                     } else {
@@ -172,6 +173,7 @@ public class MainActivity extends AppCompatActivity {
                 if (t1.getText().length() > 0) {
                     ACTION = SUBTRACTION;
                     operation();
+                    exceedLength();
                     if (t1.getText().length() > 0)
                         if (!ifReallyDecimal()) {
                             t2.setText(val1 + "-");
@@ -191,6 +193,7 @@ public class MainActivity extends AppCompatActivity {
                 if (t1.getText().length() > 0) {
                     ACTION = MULTIPLICATION;
                     operation();
+                    exceedLength();
                     if (!ifReallyDecimal()) {
                         t2.setText(val1 + "×");
                     } else {
@@ -209,6 +212,7 @@ public class MainActivity extends AppCompatActivity {
                 if (t1.getText().length() > 0) {
                     ACTION = DIVISION;
                     operation();
+                    exceedLength();
                     if (ifReallyDecimal()) {
                         t2.setText((int) val1 + "/");
                     } else {
@@ -228,6 +232,7 @@ public class MainActivity extends AppCompatActivity {
                 if (t1.getText().length() > 0) {
                     operation();
                     ACTION = EQU;
+                    exceedLength();
                     if (!ifReallyDecimal()) {
                         t2.setText(/*t2.getText().toString() + String.valueOf(val2) + "=" + */String.valueOf(val1));
                     } else {
@@ -292,8 +297,11 @@ public class MainActivity extends AppCompatActivity {
 
     private void operation() {
         if (!Double.isNaN(val1)) {
-            if (t2.getText().toString().charAt(0) == '-') {
+            if (t2.getText().toString().charAt(0) == '-' ) {
                 val1 = (-1) * val1;
+            }
+            if (t2.getText().toString().charAt(0) == 'E' ) {
+                val1 = val1;
             }
             val2 = Double.parseDouble(t1.getText().toString());
 
@@ -363,8 +371,19 @@ public class MainActivity extends AppCompatActivity {
 
     // Make text small if too many digits.
     private void exceedLength() {
-        if (t1.getText().toString().length() > 10) {
+        if (t1.getText().toString().length() > 4) {
             t1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
+        }
+        else
+        {
+            t1.setTextSize(TypedValue.COMPLEX_UNIT_SP, 68);
+        }
+        if (t2.getText().toString().length() > 10) {
+            t2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20);
+        }
+        else
+        {
+            t2.setTextSize(TypedValue.COMPLEX_UNIT_SP, 60);
         }
     }
 }
