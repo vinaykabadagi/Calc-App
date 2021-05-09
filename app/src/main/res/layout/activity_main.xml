@@ -238,15 +238,13 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/input" />
 
-        <EditText
+        <TextView
             android:id="@+id/input"
             android:layout_width="238dp"
             android:layout_height="130dp"
             android:layout_marginStart="16dp"
-            android:ems="10"
-            android:inputType="numberDecimal"
-            android:text="Number"
-            android:textSize="30sp"
+
+            android:textSize="60sp"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
