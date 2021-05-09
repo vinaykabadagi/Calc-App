@@ -55,7 +55,7 @@
             android:layout_height="100dp"
             android:text="+"
           
-            android:textColor="#9F9D9D"
+            android:textColor="#EA5D53"
             android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button3"
@@ -100,7 +100,7 @@
             android:layout_height="100dp"
             android:text="-"
           
-            android:textColor="#9F9D9D"
+            android:textColor="#FFEB3B"
             android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button6"
@@ -145,7 +145,7 @@
             android:layout_height="100dp"
             android:text="*"
           
-            android:textColor="#9F9D9D"
+            android:textColor="#00BCD4"
             android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/button9"
@@ -168,7 +168,7 @@
             android:layout_height="100dp"
             android:text="."
           
-            android:textColor="#9F9D9D"
+            android:textColor="#F40606"
             android:textSize="28sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/button7" />
@@ -179,7 +179,7 @@
             android:layout_height="100dp"
             android:text="/"
           
-            android:textColor="#9F9D9D"
+            android:textColor="#0CA313"
             android:textSize="28sp"
             app:layout_constraintStart_toEndOf="@+id/buttond0"
             app:layout_constraintTop_toBottomOf="@+id/button9" />
@@ -190,7 +190,7 @@
             android:layout_height="100dp"
             android:text="="
           
-            android:textColor="#9F9D9D"
+            android:textColor="#673AB7"
             android:textSize="28sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.506"
