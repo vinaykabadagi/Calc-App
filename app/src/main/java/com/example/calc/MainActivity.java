@@ -330,6 +330,15 @@ public class MainActivity extends AppCompatActivity {
     private void ifErrorOnOutput() {
         if (t2.getText().toString().equals("Error")) {
             t2.setText("");
+            if (t1.getText().length() > 0) {
+                CharSequence name = t1.getText().toString();
+                t1.setText(name.subSequence(0, name.length() - 1));
+            } else {
+                val1 = Double.NaN;
+                val2 = Double.NaN;
+                t1.setText("");
+                t2.setText("");
+            }
         }
     }
 
