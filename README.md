@@ -30,14 +30,3 @@ The app follows the Model-View-Controller (MVC) pattern:
 2. Open the project in Android Studio
 3. Build and run the app on your device or emulator
 
-## Future Improvements
-
-- Scientific calculator functions
-- Landscape mode with additional functions
-- Unit conversion capabilities
-- Customizable themes
-- Graph plotting functionality
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
